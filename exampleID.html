@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function bodyload()
+            {
+                document.querySelector("#hi").src="../amazong.png";
+                document.getElementById("txtRegister").value="Register";
+            }
+        </script>
+    </head>
+    <body onload="bodyload()">
+        <div>
+            <img id="hi"  alt="Car Image" height="300">
+        </div>
+        <form>
+            Name : <input type="text" id="txtName" title="Name" placeholder="Enter your name">
+                    <input type="button" id="txtRegister" value="Register" title="Register">
+        </form>
+    </body>
+</html>
