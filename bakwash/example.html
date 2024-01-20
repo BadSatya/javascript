@@ -7,18 +7,22 @@
                 pic.src="heroooooo.jpg";
                 Home.btnregister.value="register;"
             }
+            function handleClick(){
+                console.log("hello")
+            }
     // comment added
 
         </script>
     </head>
     <body onload="bodyload()">
         <div>
-             <img name="pic" width="200" height="300" border="1">
+             <img name="pic" width="200" height="300" border="1" alt="pic">
             </div>
                 <div>
                  <form name = "Home" >
-                    name: <input type= "text">
-                          <input type ="button" name ="btnregister">
+                    <label for="name">First name:</label>
+                    <input type= "text" name="name">
+                          <input type ="button" name ="btnregister" onclick="handleClick()">
                  </form>
                 </div>
     </body>
